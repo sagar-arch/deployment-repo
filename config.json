@@ -5,7 +5,7 @@
             "id": "sample-test",
             "service": "workspace",
             "properties":{
-                "source_path": "sample-test.py",
+                "source_path": "Sample-test.py",
                 "path" : "/brandpulse/test",
                 "object_type": "NOTEBOOK"
             }
