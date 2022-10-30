@@ -16,5 +16,5 @@ jobs:
       DATABRICKS_MANAGED_DIRECTORY: "/BrandPulse/test"
       ENVIRONMENT: tst
     secrets:
-      DATABRICKS_TOKEN: ${{secrets.DATABRICKS_TOKEN}}
+      DATABRICKS_TOKEN: "dapi676b7c4da088482da44132c39a6f52e2-3"
     
