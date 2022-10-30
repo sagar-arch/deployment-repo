@@ -10,11 +10,11 @@ on:
  
 jobs:
   deploy-release-test:
-  uses: sagar-arch/shared-repo/.github/workflows/shared-workflow.databricks.deploy.yml@master
-  with:
-    DATABRICKS_HOST: "https://adb-193114091692043.3.azuredatabricks.net/"
-    DATABRICKS_MANAGED_DIRECTORY:"/BrandPulse/test"
-    ENVIRONMENT: tst
-  secrets:
-    DATABRICKS_TOKEN: ${{secrets.DATABRICKS_TOKEN}}
+    uses: sagar-arch/shared-repo/.github/workflows/shared-workflow.databricks.deploy.yml@master
+    with:
+      DATABRICKS_HOST: "https://adb-193114091692043.3.azuredatabricks.net/"
+      DATABRICKS_MANAGED_DIRECTORY: "/BrandPulse/test"
+      ENVIRONMENT: tst
+    secrets:
+      DATABRICKS_TOKEN: ${{secrets.DATABRICKS_TOKEN}}
     
