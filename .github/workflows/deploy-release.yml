@@ -1,0 +1,20 @@
+#This is a template to deploy if databricks notebook for release branch
+name: deploy-release
+on:
+  #trigger the workflow on creation and publish of new release
+  release:
+    types: [published]
+    
+  #Allow you to run this workflow manually from the actions tab too
+  workflow_dispatch:
+ 
+jobs:
+  deploy-release-test:
+  uses: sagar-arch/shared-repo/.github/workflows/shared-workflow.databricks.deploy.yml@master
+  with:
+    DATABRICKS_HOST: "https://adb-193114091692043.3.azuredatabricks.net/"
+    DATABRICKS_MANAGED_DIRECTORY:"/BrandPulse/test"
+    ENVIRONMENT: tst
+  secrets:
+    DATABRICKS_TOKEN: ${{secrets.DATABRICKS_TOKEN}}
+    
