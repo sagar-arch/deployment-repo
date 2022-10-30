@@ -16,4 +16,4 @@ jobs:
       DATABRICKS_MANAGED_DIRECTORY: "/BrandPulse"
       ENVIRONMENT: dev
     secrets:
-      DATABRICKS_TOKEN: ${{secrects.DATABRICKS_TOKEN}}
+      DATABRICKS_TOKEN: ${{secretss.DATABRICKS_TOKEN}}
